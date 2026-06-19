@@ -3,6 +3,7 @@ name = "cleriai"
 version = "0.1.0"
 requires-python = ">=3.12,<3.13"
 dependencies = [
+    "datasets>=5.0.0",
     "requests>=2.34.2",
     "tokenizers>=0.23.1",
     "torch>=2.12.1",

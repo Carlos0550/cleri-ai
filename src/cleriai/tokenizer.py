@@ -33,7 +33,7 @@ def load_tokenizer(path: Path) -> Tokenizer:
     return Tokenizer.from_file(str(path))
 
 if __name__ == "__main__":
-    quijote = Path("data/raw/quijote.txt")
+    corpus = Path("data/raw/corpus_combined.txt")
     out = Path("data/processed/tokenizer.json")
-    tok = train_bpe_tokenizer(quijote, vocab_size=8000, save_path=out)
+    tok = train_bpe_tokenizer(corpus, vocab_size=16000, save_path=out)
     print(f"Vocab size final: {tok.get_vocab_size()}")
